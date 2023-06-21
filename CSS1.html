@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css/Css3 assignment</title>
+    <style>
+        *{
+            margin: 1%;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main h1{
+            margin: 0%;
+            background-color: black;
+            color: gold;
+        }
+        .q3{
+            width: 100%;
+            /* background-color:blueviolet; */
+        }
+        .q3 .q3c{
+            margin: 0%;
+            float: left;
+            width: 40%;
+            background-color:blueviolet;
+        }
+        .q3 .q3l{
+            margin: 0%;
+            float: left;
+            width: 40%;
+            height: max-content;
+            height: 100%;
+            background-color: blueviolet;
+        }
+        .q3 span h2{
+            padding: 2%;
+            margin-left: 35%;
+            border: 2%;
+            border-radius:20px;
+            width: fit-content;
+            background-color: #f5f6f7;
+            color: #50197f;
+            font-size: 200%;
+            font-family: calibri;
+            
+        }
+        .q3 li{
+             padding-bottom: 2%; 
+        }
+        .q4{
+            clear: both;
+        }
+        fieldset{
+            background-color: grey;
+            color: darkblue;
+        }
+        .bm{
+            width: 100%;
+        }
+        .box{
+            float: left;
+            border: 2px solid red;
+            width: 48%;
+            height: 350px;
+            background-size: 40% 40%;
+            background-image: url('https://img.freepik.com/free-photo/colorful-bicycle-with-basket-flowers-it_1340-24262.jpg?w=740&t=st=1686738843~exp=1686739443~hmac=1a79059d9dbe49a7c36de841061b83b86a9a9558e189c52ea15e1ba33165df45');
+            background-repeat: no-repeat;
+            background-position: center left;
+            }
+        .box2{
+            float: left;
+            border: 2px solid red;
+            width: 48%;
+            height: 350px;
+            background-size: 40% 40%;
+            background-image: url('https://img.freepik.com/free-photo/colorful-bicycle-with-basket-flowers-it_1340-24262.jpg?w=740&t=st=1686738843~exp=1686739443~hmac=1a79059d9dbe49a7c36de841061b83b86a9a9558e189c52ea15e1ba33165df45');
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+        .obox {
+        background-color: #4CAF50;
+        padding: 10px;
+        }
+
+        .obox .first {
+        opacity: 0.1;   
+        }
+
+        .obox .second {
+        opacity: 0.3;
+        }
+
+        .obox .third {
+        opacity: 0.6;
+        }
+        /* Q7 */
+        .bm7{
+            width: 100%;
+        }
+        .box7{
+            float: left;
+            border: 2px solid red;
+            width: 48%;
+            height: 350px;
+            background-size: 40% 40%;
+            background-image: url('https://img.freepik.com/free-photo/colorful-bicycle-with-basket-flowers-it_1340-24262.jpg?w=740&t=st=1686738843~exp=1686739443~hmac=1a79059d9dbe49a7c36de841061b83b86a9a9558e189c52ea15e1ba33165df45');
+            /* background-repeat: repeat; */
+            }
+        .box27{
+            float: left;
+            border: 2px solid red;
+            width: 48%;
+            height: 350px;
+            background-size: 40% 40%;
+            background-image: url('https://img.freepik.com/free-photo/colorful-bicycle-with-basket-flowers-it_1340-24262.jpg?w=740&t=st=1686738843~exp=1686739443~hmac=1a79059d9dbe49a7c36de841061b83b86a9a9558e189c52ea15e1ba33165df45');
+            background-repeat: no-repeat;
+        }
+        .hbox{
+            text-align: center;
+            width: 48%;
+            float: left;
+        }
+        /* Q9 CSS */
+        .q9{
+            clear: both;
+        }
+        .scroll{
+            margin: 10px auto;
+            width: 50%;
+            height: 50%;
+            border: 2px solid black;
+            background-image: url('https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?w=740&t=st=1686896327~exp=1686896927~hmac=d46da204bdc6350c490d00b96781c463abc1dd5ddc04f6ee02e870fbca0eecdc');
+            background-size: 25% 25%;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+        }
+        /* Q11 css */
+        .box11{
+            width: 50%;
+            border: 2px dotted black;
+        }
+        .box211{
+            width: 50%;
+            margin: 10px auto;
+            border: 2px dotted black;
+        }
+        /* Q14 */
+        .box14 h1   {color: yellow;}
+        .box14 p    {color: red;}
+        /* q15 */
+        .fmain{
+            width: 100%;
+        }
+        .fmain .fbox{
+            float: left;
+            width: 48%;
+        }
+        .box15{
+            clear: both;
+        }
+        .box15 h1   {color: yellow;}
+        .box15 p    {color: red;}
+
+        /* q20 CSS */
+        section{
+            background-color: #eee;
+        }
+        .container{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .container .box20{
+            width: 31%;
+        }
+        .container .box20 .thumbnail{
+            margin: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            color: white;
+            background-color: #333;
+        }
+        .container .box20 .content{
+            margin: 0%;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+        .container .box20 .content div {
+            margin-top: 2%;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .container .box20 .content div a{
+            margin: 0%;
+            text-decoration: none;
+            padding: 4px 15px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="main">
+    <center><h1>Module-2</h1></center>
+    </div>
+    <!-- Q1  -->
+    <div class="q1">
+        <h3>Q1.What are the benefits of using CSS?</h3>
+        <p>If you’re not using cascading style sheets in your web pages yet shame on you. CSS has excellent support in today’s browsers. It’s relatively easy to learn and produces better and cleaner code than applying all those styles directly to your HTML.
+
+
+            Using CSS modularizes your websites in much the same way that programmers have been modularizing software code for year. Modular code in your website allows for greater design consistency and easier maintenance. CSS is the new standard and has been now for several years. It’s time to separate the structure of HTML and the presentation of CSS.
+            
+            So if we’ve been using HTML for years and creating all sorts of great websites with them why make the switch? Some of the advantages of using CSS are:</p>
+            <ul>
+            <li>Easier to maintain and update</li>
+            <li>Greater consistency in design</li>
+            <li>More formatting options</li>
+            <li>Lightweight code</li>
+            <li>Faster download times</li>
+            <li>Search engine optimization benefits</li>
+            <li>Ease of presenting different styles to different viewers</li>
+            <li>Greater accessibility</li>
+            </ul>
+    </div>
+    <hr>
+    <!-- Q2 -->
+    <div class="q2">
+        <h3>Q2.What are the disadvantages of CSS?</h3>
+        <ul>
+            <li>CSS, CSS 1 up to CSS3, result in creating of confusion among  web browsers.</li>
+            <li>With CSS, what works with one browser might not always work with another. The web developers need to test for compatibility, running the program across multiple browsers.</li>
+            <li>There exists a scarcity of security.</li>
+            <li>After making the changes we need to confirm the compatibility if they appear. The similar change affects on all the browsers.</li>
+            <li>The programming language world is complicated for non-developers and beginners. Different levels of CSS i.e. CSS, CSS 2, CSS 3 are often quite confusing.</li>
+            <li>Browser compatibility (some styles sheet are supported and some are not).</li>
+            <li>CSS works differently on different browsers. IE and Opera supports CSS as different logic.</li>
+            <li>There might be cross-browser issues while using CSS.</li>
+            <li>There are multiple levels which creates confusion for non-developers and beginners</li>
+        </ul> 
+    </div>
+    <hr>
+    <!-- Q3 -->
+    <div>
+    <h3>Q3.What is the difference between CSS2 and CSS3?</h3>
+    </div>
+    <div class="q3">
+        <div class="q3c">
+         <span><h2>CSS2</h2></span>
+          <ul style="margin-left: 3%; padding-bottom: 6%; color: #f6f5f7;">
+            <li>CSS splits up different sections of the code into modules,</li>
+            <li>There are new ways you can write CSS rules with a bunch of CSS selectors</li>
+            <li>There is no backward compatibility with CSS2</li>
+            <li>With CSS2 only web safe fonts can be used</li>
+            <li>With CSS2 the concept of simple selectors were present</li>
+            <li>Using CSS2, for rounded borders, coding the css styles were complex</li>
+            <li>CSS 2, splitting text into multiple columns required complex coding because the standard was not equipped enough to break the text into columns so that it would fit into a box
+            </li>
+            <li>CSS 2 Doesn't support the Border- Box property</li>
+          </ul>
+        </div>
+        <div class="q3l">
+            <span><h2>CSS3</h2></span>
+              <ul style="margin-left: 3%;  color: #f6f5f7;">
+                <li>Both CSS and HTML were put into a single file, there was no concept of modules before</li>
+                <li>There were no new ways of writing the CSS rules</li>
+                <li>There is backward compatibility maintained with CSS</li>
+                <li>With CSS3 special fonts can be used such as those in Google Fonts and TypeCast</li>
+                <li>With CSS3 the selectors were called as a sequence of simple seletors</li>
+                <li>With CSS3, there is provision for automatically assigning rounded borders to objects</li>
+                <li>CSS3 has the capability to split text into various columns so that each text block appears as a layout of the newspaper</li>
+                <li>CSS3 supports the Border-Box property</li>
+              </ul>
+        </div>
+    </div>
+    <hr style="margin-top: 38%;">
+    <!-- Q4 -->
+    <div class="q4">
+        
+       <h3> Q4.name a few css style components.</h3>
+       <ul>
+        <li>Selector</li>
+        <li>Attribute</li>
+        <li>Value of Property</li>
+       </ul>
+    </div>
+    <hr>
+    <!-- Q5 -->
+    <div class="q5">
+        <h3>Q5.What do you understand by CSS opacity? </h3>
+        <p>The opacity CSS attribute controls an element's opacity. Opacity is the degree to which the content underlying an element is concealed, and it is the inverse of transparency.</p>
+        <fieldset>
+            <legend><b>Example</b></legend>
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            .obox {<br>
+            background-color: #4CAF50;<br>
+            padding: 10px;<br>
+            }<br>
+            <br>
+            obox.first {<br>
+            opacity: 0.1;<br>
+            }<br>
+
+            obox.second {<br>
+            opacity: 0.3;<br>
+            }<br>
+
+            obox.third {<br>
+            opacity: 0.6;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;The opacity Property &lt;/h1&gt;<br>
+
+            &lt;div class="obox"&gt;<br>
+            &lt;div class="first"&gt;&lt;p&gt;opacity 0.1&lt;/p&gt;&lt;/div&gt;<br>
+            &lt;div class="second"&gt;&lt;p&gt;opacity 0.3&lt;/p&gt;&lt;/div&gt;<br>
+            &lt;div class="third"&gt;&lt;p&gt;opacity 0.6&lt;/p&gt;&lt;/div&gt;<br>
+            &lt;div&gt;&lt;p&gt;opacity 1 (default)&lt;/p&gt;&lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;<br>
+        </fieldset>
+        <br>
+        <h2>OUTPUT:</h2>
+
+        <div class="obox">
+
+        <h1>The opacity Property</h1>
+
+        <div class="first"><p>opacity 0.1</p></div>
+        <div class="second"><p>opacity 0.3</p></div>
+        <div class="third"><p>opacity 0.6</p></div>
+        <div><p>opacity 1 (default)</p></div>
+    </div>
+    <hr>
+    <!-- Q6 -->
+    <div class="q6">
+        <h3>Q6.How can the background color of an element be changed?</h3>
+        <p>To add background color in HTML, use the CSS background-color property. Set it to the color name or code you want and place it inside a style attribute. Then add this style attribute to an HTML element, like a table, heading, div, or span tag.</p>
+        <h2>Example:</h2>
+        <fieldset>
+            <legend><b>Backgroundcolor</b></legend>
+            <h3 style=color:darkgreen;>using inline css</h3><br><br>
+            &lt;table style="<b style="background-color: yellowgreen; width: fit-content;">background-color:#33475b;</b> color:yellow"&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;th&gt;Name&lt;/th&gt;<br>
+                &lt;th&gt;Job Title&lt;/lt&gt;<br>
+                &lt;th&gt;Email address&lt;/th&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;Mayur&lt;/td&gt;<br>
+                &lt;td&gt;Staff Writer&lt;/td&gt;<br>
+                &lt;td&gt;example@company.com&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;Smith&lt;/td&gt;<br>
+                &lt;td&gt;Marketing Manager&lt;/td&gt;<br>
+                &lt;td&gt;example2@company.com&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt;Grace&lt;/td&gt;<br>
+                &lt;td&gt;CEO&lt;/td&gt;<br>
+                &lt;td&gt;example2@company.com&lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/table&gt;
+        </fieldset>
+
+        <h2>OUTPUT</h2>
+        <table style="background-color:#33475b; color:yellow">
+            <tr>
+            <th>Name</th>
+            <th>Job Title</th>
+            <th>Email address</th>
+            </tr>
+            <tr align="center">
+            <td>Anna</td>
+            <td>Staff Writer</td>
+            <td>example@company.com</td>
+            </tr>
+            <tr align="center">
+            <td>Smith</td>
+            <td>Marketing Manager</td>
+            <td>example2@company.com</td>
+            </tr>
+            <tr align="center">
+            <td>Grace</td>
+            <td>CEO</td>
+            <td>example2@company.com</td>
+            </tr>
+            </table>
+        
+    </div>
+    <hr>
+    <!-- Q7 -->
+    <div class="q7">
+        <h3>Q7.How can image repetition of the backup be controlled? </h3>
+        <p>Use the<b style="background-color: yellowgreen;"> background-repeat property </b>to set the frequency that the background image repeats. If you don't want an image to repeat, you can set the background-repeat property to no-repeat; in this case, the image will only appear once.</p>
+        <fieldset>
+            <legend><b>Example</b></legend>
+            <b>CSS:</b><br>
+            .bm7{<br>
+                width: 100%;<br>
+            }<br>
+            .box7{<br>
+                float: left;<br>
+                border: 2px solid red;<br>
+                width: 48%;<br>
+                height: 350px;<br>
+                background-size: 40% 40%;<br>
+                background-image: url('https://img.freepik.com/free-photo/colorful-bicycle-with-basket-flowers-it_1340-24262.jpg?w=740&t=st=1686738843~exp=1686739443~hmac=1a79059d9dbe49a7c36de841061b83b86a9a9558e189c52ea15e1ba33165df45');<br>
+                /* background-repeat: repeat; */<b style="background-color: yellowgreen;">this is a by default repeat</b><br>
+            }<br>
+            .box27{<br>
+                float: left;<br>
+                border: 2px solid red;<br>
+                width: 48%;<br>
+                height: 350px;<br>
+                background-size: 40% 40%;<br>
+                background-image: url('https://img.freepik.com/free-photo/colorful-bicycle-with-basket-flowers-it_1340-24262.jpg?w=740&t=st=1686738843~exp=1686739443~hmac=1a79059d9dbe49a7c36de841061b83b86a9a9558e189c52ea15e1ba33165df45');<br>
+                background-repeat: no-repeat;<br>
+            }<br>
+            .hbox{<br>
+                text-align: center;<br>
+                width: 48%;<br>
+                float: left;<br>
+            }<br>
+            <b>HTML CODE:</b><br>
+            &lt;div class="bm7"&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="box7"&gt;<br>
+            &lt;h1 style="color: yellow;"&gt; The background-repeat Property&lt;/h1&gt;<br>
+            &lt;p style="color: yellow;"&gt; Here, the background image will be set repeat(default).&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="box27"&gt;<br>
+            &lt;h1 style="color: yellow;"&gt; The background-repeat Property&lt;/h1&gt;<br>
+            &lt;p style="color: yellow;"&gt; Here, the background image will be set no-repeat.&lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="hbox"&gt;<br>
+            &lt;h2&gt;background-repeat(default)&lt;/h2&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;div class="hbox"&gt;<br>
+            &lt;h2&gt;background-repeat: no repeat &lt;/h2&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;/div&gt;<br>
+        </fieldset>
+        <div class="bm7">        
+        </div>
+            <div class="box7">
+            <h1 style="color: yellow;">The background-repeat Property</h1>
+            <p style="color: yellow;">Here, the background image will be set repeat(default).</p>
+            </div>
+            <div class="box27">
+            <h1 style="color: yellow;">The background-repeat Property</h1>
+            <p style="color: yellow;">Here, the background image will be set no-repeat.</p>
+            </div>
+            <div class="hbox">
+                <h2>background-repeat(default)</h2>
+            </div>
+            <div class="hbox">
+                <h2>background-repeat: no repeat</h2>
+            </div>
+        </div>
+    </div>
+    <hr style="clear: both;">
+    <!-- Q8 -->
+    <div class="q8">
+        <h3>Q8.What is the use of the background-position property? </h3>
+        <p>The background-position property sets the starting position of a background image.<br>
+        <b>Tip:</b>By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally.</p>
+        <fieldset>
+            <legend><b>Example</b></legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html>&gt;<br>
+                &lt;head>&gt;<br>
+                &lt;style>&gt;<br>
+                body { <br>
+                background-image: url('w3css.gif');<br>
+                background-repeat: no-repeat;<br>
+                background-attachment: fixed;<br>
+                background-position: center top; <br>
+                }<br>
+                &lt;/style&gt;<br>
+                &lt;/head>&gt;<br>
+                &lt;body>&gt;<br>
+
+                &lt;h1&gt;The background-position Property&lt;/h1&gt;<br>
+                &lt;p&gt;Here, the background image will be positioned centered at top.&lt;/p&gt;<br>
+
+                &lt;/body&gt;<br>
+                &lt;/html>&gt;<br>
+        </fieldset>
+        <h2>OUTPUT</h2> 
+    <div class="bm">        
+    </div>
+        <div class="box">
+        <h1>The background-position Property</h1>
+        <p>Here, the background image will be positioned centered at left.</p>
+        </div>
+        <div class="box2">
+        <h1>The background-position Property</h1>
+        <p>Here, the background image will be positioned centered at bottom.</p>
+        </div>
+    </div>
+
+    
+    <!-- q9 -->
+    <div class="q9">
+        <hr>
+        <h3>Q9.Which property controls the image scroll in the background? </h3>
+        <p>A background image's background-attachment property determines whether it will scroll with the page or remain fixed.</p>
+        <fieldset>
+            <legend>Example code</legend>
+            <b>CSS</b><br>
+            .scroll{<br>
+                margin: 10px auto;<br>
+                width: 50%;<br>
+                height: 50%;<br>
+                border: 2px solid black;<br>
+                background-image: url('https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?w=740&t=st=1686896327~exp=1686896927~hmac=d46da204bdc6350c490d00b96781c463abc1dd5ddc04f6ee02e870fbca0eecdc');<br>
+                background-size: 25% 25%;<br>
+                background-repeat: no-repeat;<br>
+                background-attachment: scroll;<br>
+            }<br>
+            <b>element</b><br>
+            &lt;div class="scroll"&gt;<br>
+                &lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente asperiores autem earum omnis velit praesentium atque, est possimus amet corrupti porro illo eveniet libero iure accusamus nemo non dicta consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda inventore excepturi dolorem laboriosam quam nesciunt amet suscipit cum quisquam numquam, eaque voluptate ut itaque modi facere, enim, ex aut recusandae est. Doloribus eius sit nam, quis consectetur earum? Vitae ipsum molestias sapiente magnam saepe architecto, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae laboriosam voluptatem consectetur sed dolorem sint deleniti dignissimos fugit inventore, tempore, animi quas aut! Officiis quos corporis ducimus exercitationem repellendus, error quia provident libero obcaecati earum aut rem repudiandae consectetur sapiente enim nemo. Commodi deserunt ratione eveniet saepe unde! Veniam explicabo voluptatum magnam laboriosam soluta debitis, consequatur atque molestiae mollitia exercitationem iste tempora distinctio earum aliquid fugit sit? Hic excepturi modi optio architecto rem illo provident, commodi, corporis adipisci pariatur ullam ratione magnam rerum eaque, placeat reprehenderit! Recusandae eius corrupti nesciunt, saepe enim temporibus fugit modi, sed ipsam eos adipisci! Obcaecati, molestias! Possimus placeat iure tempore adipisci omnis! Modi veritatis, quod vel ? &lt;/p&gt;<br>
+            &lt;/div&gt;<br>
+            &lt;h2 style="text-align: center; color: midnightblue; "&gt;background-attachment:scroll(default)&lt;/h2&gt;<br>
+            &lt;/div&gt;<br>
+        </fieldset>
+    
+    <div class="scroll">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente asperiores autem earum omnis velit praesentium atque, est possimus amet corrupti porro illo eveniet libero iure accusamus nemo non dicta consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda inventore excepturi dolorem laboriosam quam nesciunt amet suscipit cum quisquam numquam, eaque voluptate ut itaque modi facere, enim, ex aut recusandae est. Doloribus eius sit nam, quis consectetur earum? Vitae ipsum molestias sapiente magnam saepe architecto, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae laboriosam voluptatem consectetur sed dolorem sint deleniti dignissimos fugit inventore, tempore, animi quas aut! Officiis quos corporis ducimus exercitationem repellendus, error quia provident libero obcaecati earum aut rem repudiandae consectetur sapiente enim nemo. Commodi deserunt ratione eveniet saepe unde! Veniam explicabo voluptatum magnam laboriosam soluta debitis, consequatur atque molestiae mollitia exercitationem iste tempora distinctio earum aliquid fugit sit? Hic excepturi modi optio architecto rem illo provident, commodi, corporis adipisci pariatur ullam ratione magnam rerum eaque, placeat reprehenderit! Recusandae eius corrupti nesciunt, saepe enim temporibus fugit modi, sed ipsam eos adipisci! Obcaecati, molestias! Possimus placeat iure tempore adipisci omnis! Modi veritatis, quod vel ? </p>
+    </div>
+    <h2 style="text-align: center; color: midnightblue; ">background-attachment:scroll(default)</h2>
+    </div>
+    <hr>
+    <!-- q10 -->
+    <div class="q10">
+        <h3>Q10.Why should background and color be used as separate properties? </h3>
+        
+            <b>There are two reasons behind this:</b>
+            <br>
+            <ul>
+            <li>It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.</li>
+            <li>Color is an inherited property while the background is not. So this can make confusion further.</li>
+            </ul>
+    </div>
+    <hr>
+    <!-- q11 -->
+    <div class="q11">
+        <h3>Q11.How to center block elements using CSS1? </h3>
+        <b>There are two steps to center a block-level element –</b>
+        <p><b>STEP 1: simply use of the &lt;center&gt; tag. All the elements within the &lt;/center&gt; tag will be centrally aligned.</b></p>
+        <fieldset>
+            <legend><b>Example</b></legend>
+            <b>CSS</b><br>
+            .mbox11 .box11{<br>
+                width: 50%;<br>
+                border: 2px dotted black;<br>
+            }<br>
+            <b>element code</b><br>
+            &lt;center&gt;<br>
+                &lt;div class="box11"&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit labore dolore dicta, voluptatem vel perferendis officia molestiae quia nihil quisquam ipsum commodi delectus? Earum, officiis. Sunt doloribus eius consequuntur fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea labore ducimus consequatur, vero nulla quidem! Dolores enim maxime beatae ipsa dolorum, libero veritatis. Nostrum, quaerat maxime! Quibusdam, dolore unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe, magnam sequi dolorem ad iste, dolorum dicta consequatur porro alias ab odit at commodi velit quas laudantium necessitatibus incidunt neque.&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h2&gt;STEP 1 : Using Center Tag&lt;/h2&gt;<br>
+            &lt;/center&gt;<br>
+        </fieldset>
+        <center>
+            <h2>OUTPUT</h2>
+            <div class="box11">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit labore dolore dicta, voluptatem vel perferendis officia molestiae quia nihil quisquam ipsum commodi delectus? Earum, officiis. Sunt doloribus eius consequuntur fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea labore ducimus consequatur, vero nulla quidem! Dolores enim maxime beatae ipsa dolorum, libero veritatis. Nostrum, quaerat maxime! Quibusdam, dolore unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe, magnam sequi dolorem ad iste, dolorum dicta consequatur porro alias ab odit at commodi velit quas laudantium necessitatibus incidunt neque.</p>
+            </div>
+            <h2>STEP 1 : Using Center Tag</h2>
+        </center>
+        <p><b>Step 2: Set the left-margin and the right-margin of the element to auto</b></p>
+        <fieldset>
+            <legend><b>Example</b></legend>
+            <b>CSS</b><br>
+            .box211{<br>
+                width: 50%;<br>
+                margin: 10px auto;<br>
+                border: 2px dotted black;<br>
+            }<br>
+            <b>element code</b><br>
+                &lt;div class="box11"&gt;<br>
+                    &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit labore dolore dicta, voluptatem vel perferendis officia molestiae quia nihil quisquam ipsum commodi delectus? Earum, officiis. Sunt doloribus eius consequuntur fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea labore ducimus consequatur, vero nulla quidem! Dolores enim maxime beatae ipsa dolorum, libero veritatis. Nostrum, quaerat maxime! Quibusdam, dolore unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe, magnam sequi dolorem ad iste, dolorum dicta consequatur porro alias ab odit at commodi velit quas laudantium necessitatibus incidunt neque.&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;h2&gt;STEP 2: using left and right margin auto&lt;/h2&gt;<br>
+        </fieldset>
+        <h2 style="text-align: center;">OUTPUT</h2>
+            <div class="box211">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit labore dolore dicta, voluptatem vel perferendis officia molestiae quia nihil quisquam ipsum commodi delectus? Earum, officiis. Sunt doloribus eius consequuntur fugiat?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ea labore ducimus consequatur, vero nulla quidem! Dolores enim maxime beatae ipsa dolorum, libero veritatis. Nostrum, quaerat maxime! Quibusdam, dolore unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe, magnam sequi dolorem ad iste, dolorum dicta consequatur porro alias ab odit at commodi velit quas laudantium necessitatibus incidunt neque.</p>    
+            </div>
+            <h2 style="text-align: center;">STEP 2: using left and right margin auto</h2>
+
+    </div>
+    <hr>
+    <!-- q12 -->
+    <div class="q12">
+        <h3>Q12.How to maintain the CSS specifications?</h3>
+        <p>The CSS specifications are maintained by the World Wide Web Consortium (W3C). Even though every browser supports CSS, there are many inconsistencies in the supported specification version. Some browsers even have their own implementation of the specification and have proprietary (vendor) prefixes.</p>
+        <ol>
+            <li>MEDIA QUERIES</li>
+            <p>Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following: To conditionally apply styles with the CSS @media and @import at-rules.</p>
+            <li>SELECTORS</li>
+            <p>What is a selector? A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them.</p>
+            <li>BOX MODEL</li>
+            <p>What is the CSS Box Model? The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. According to the CSS box model, the web browser supplies each element as a square prism.</p>
+        </ol>
+    </div>
+    <hr>
+    <!-- q13 -->
+    <div class="q13">
+        <h3>Q13.What are the ways to integrate CSS as a web page? </h3>
+        <h4> &#10148;&nbsp;CSS can be added to HTML documents in 3 ways:</h4>
+        <ol>
+            <li>Inline - by using the style attribute inside HTML elements.</li>
+            <fieldset>
+                <legend>Example</legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1 <b style="background-color: greenyellow;">style="color:blue;"</b>&gt;This Is A  Blue Heading&lt;/h1&gt;<br>
+                &lt;p <b style="background-color: greenyellow;">style="color:red;"</b>&gt;This is a  paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </fieldset>
+            <li>Internal(embedded) - by using a &lt;style&gt; element in the &lt;head&gt; section.</li>
+            <fieldset>
+                <legend>Example</legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                <b style="background-color: greenyellow;">&lt;style&gt;<br>
+                body {background-color: powderblue;}<br>
+                h1   {color: yellow;}<br>
+                p    {color: red;}<br>
+                &lt;/style&gt;<br></b>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;its a heading&lt;/h1&gt;<br>
+                &lt;p&gt;its a paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </fieldset>
+            <li>External - by using a &lt;link&gt; element to link to an external CSS file.</li>
+            <fieldset>
+                <legend>Example</legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                <b style="background-color: greenyellow;">&lt;link rel="stylesheet" href="styles.css"&gt;</b><br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;This is a h1 tag&lt;/h1&gt;<br>
+                &lt;p&gt;This is a p tag.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </fieldset>
+        </ol>
+    </div>
+    <hr>
+    <!-- q14 -->
+    <div class="q14">
+        <h3>Q14.What is embedded style sheets?</h3>
+        <p>An embedded style sheet is declared within an HTML document's <head> element. It is applicable to the entire document rather than just one element. Each style declaration (or CSS rule) is applied to everything in the document that's related to that rule.</p>
+            <fieldset>
+                <legend>Example</legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                <b style="background-color: greenyellow;">&lt;style&gt;<br>
+                body {background-color: powderblue;}<br>
+                h1   {color: yellow;}<br>
+                p    {color: red;}<br>
+                &lt;/style&gt;<br></b>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;its a heading&lt;/h1&gt;<br>
+                &lt;p&gt;its a paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </fieldset>
+            <h3>OUTPUT</h3>
+            <div class="box14">
+                <h1>its a heading</h1>
+                <p>its  a paragraph.</p>
+            </div>
+        </div>
+    <hr>
+    <!-- q15 -->
+    <div class="q15">
+        <h3>Q15.What are the external style sheets? </h3>
+        <p>An external style sheet is a separate CSS file that may be accessed by creating a link in the webpage's head section. To access the stylesheet, many webpages can use the same link. The link to an external style sheet is included in the page's head section.</p>
+        <div class="fmain">
+            <div class="fbox">           
+            <fieldset>
+                <legend>Example</legend>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                <b style="background-color: greenyellow;">&lt;link rel="stylesheet" href="styles.css"&gt;</b><br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;This is a h1 tag&lt;/h1&gt;<br>
+                &lt;p&gt;This is a p tag.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </fieldset>
+            </div>
+            <div class="fbox">
+                <fieldset>
+                    <legend>style.css</legend>
+                    <h2 style="color: green;">This is a style.css file</h2>
+                    .fbox h1 {color: yellow;}<br>
+                    .fbox p {color: red;}<br><br>
+                </fieldset>
+            </div>
+        </div>
+        <div class="box15">
+            <h3>OUTPUT</h3>
+            <h1>its a heading</h1>
+            <p>its  a paragraph.</p>
+        </div>
+
+        
+    </div>
+    <hr>
+    <!-- Q16 -->
+    <div class="q16">
+        <h3>Q16.What are the advantages and disadvantages of using external style sheets?</h3>
+        <b>The advantages of External Style Sheets:</b>
+<ul>
+<li>With the help of External Style Sheets, the styles of numerous documents can be organized from one single file.</li>
+<li>In External Style Sheets, Classes can be made for use on numerous HTML element types in many forms of the site.</li>
+<li>In complex contexts, Methods like selector and grouping can be implemented to apply styles.</li>
+</ul>
+<b>The disadvantages of External Style Sheets:</b>
+<ul>
+<li>An extra download is essential to import style information for each file.</li>
+<li>The execution of the file may be deferred till the external style sheet is loaded.</li>
+<li>While implementing style sheets, we need to test Web pages with multiple browsers in order to check compatibility issues.</li>
+</ul>
+</div>
+    <hr>
+    <!-- Q17 -->
+    <div class="q17">
+        <h3>Q17.What is the meaning of the CSS selector?</h3>
+        <p>The first component of a CSS Rule is a CSS selector. It is a pattern of elements and other phrases that tells the browser which HTML elements should be picked in order for the CSS property values contained within the rule to be applied to them.</p><br>
+        <h3>We can divide CSS selectors into five categories:</h3>
+        <ol>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+            <li>Pseudo-class selectors (select elements based on a certain state)</li>
+            <li>Pseudo-elements selectors (select and style a part of an element)</li>
+            <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+        </ol>
+    </div>
+    <hr>
+    <!-- Q18 -->
+    <div class="q18">
+        <h3>Q18.What are the media types allowed by CSS? </h3>
+        <p>CSS (Cascading Style Sheets) is a style sheet language used to describe the visual presentation of a document written in HTML or XML. CSS supports several media types, which define the target output devices or environments for which the styles are intended. The media types allowed by CSS are as follows:
+            <ol>
+                <li>all: This is the default media type and applies to all devices and environments.</li>
+                <li>screen: Intended for computer screens, tablets, smartphones, and similar devices.</li>
+                <li>print: Intended for printers or print preview modes. Styles defined for this media type control the appearance of the document when it is printed.</li>
+                <li>speech: Intended for speech synthesizers or screen readers. Styles defined for this media type specify how the document should be presented in an audio format.</li>    
+                <li>projection: Intended for projected presentations, such as slideshows.</li>
+                <li>handheld: Intended for handheld devices, such as mobile phones or PDAs.</li>
+                <li>tv: Intended for television-type devices.</li>
+                <li>braille: Intended for braille tactile feedback devices.</li>
+                <li>embossed: Intended for paged braille printers.</li>
+                <li>aural: Deprecated in CSS3 and no longer recommended. It was used for older speech synthesizers but has been replaced by the speech media type.</li>
+            </ol>
+        </p>
+    </div>
+    <hr>
+    <!-- q19 -->
+    <div class="q19">
+        <h3>Q19.What is the rule set?</h3>
+        <p>In CSS (Cascading Style Sheets), a rule set is a combination of a selector and a declaration block. It defines how specific elements within an HTML or XML document should be styled. The basic syntax of a rule set is as follows:</p>
+        <h3>CSS</h3>
+        selector {<br>
+            property: value;<br>
+            /* Additional properties and values */<br>
+        }<br>
+        <ol>
+            <li>Selector: It determines which elements within the document the rule set will apply to. There are various types of selectors in CSS, including element selectors, class selectors, ID selectors, attribute selectors, and more. For example:
+                <ul>
+                    <li>Element selector: Targets all instances of a specific HTML element. e.g., p, h1, div.</li>
+                    <li>Class selector: Targets elements with a specific class attribute. e.g., .my-class.</li>
+                    <li>ID selector: Targets a specific element with a unique ID attribute. e.g., #my-id</li>
+                    <li>Attribute selector: Targets elements based on their attribute values. e.g., [type="text"].</li>
+                </ul>
+            </li>
+            <li>Declaration Block: It contains one or more declarations enclosed in curly braces {}. Each declaration consists of a property and its corresponding value. A declaration defines the style or behavior that should be applied to the selected elements. For example:</li>
+            selector {<br>
+                property1: value1;<br>
+                property2: value2;<br>
+                /* Additional properties and values *<br>
+            }</br>
+                <ul>
+                    <li>Property: It specifies the aspect of the element's style that should be modified, such as color, font-size, margin, etc.</li>
+                    <li>Value: It assigns a specific value to the property, defining how the selected element should appear or behave.</li>
+                </ul>
+        </ol>
+    </div>
+    <hr>
+    <!-- Q20 -->
+    <div class="q20">
+        <h3>Q20.Create Layouts</h3>
+        <b>OUTPUT</b>
+        <section>
+            <div class="container">
+                <div class="box20">
+                    <div class="thumbnail">
+                        Thumbnail
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore dignissimos dolores amet eligendi sapiente ipsum ad facilis non? Nihil dignissimos voluptate dicta, quidem vitae modi laudantium eligendi sequi neque!</p>
+                        <div>
+                            <a href="">view</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="box20">
+                    <div class="thumbnail">
+                        Thumbnail
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore dignissimos dolores amet eligendi sapiente ipsum ad facilis non? Nihil dignissimos voluptate dicta, quidem vitae modi laudantium eligendi sequi neque!</p>
+                        <div>
+                            <a href="">view</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box20">
+                    <div class="thumbnail">
+                        Thumbnail
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore dignissimos dolores amet eligendi sapiente ipsum ad facilis non? Nihil dignissimos voluptate dicta, quidem vitae modi laudantium eligendi sequi neque!</p>
+                        <div>
+                            <a href="">view</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box20">
+                    <div class="thumbnail">
+                        Thumbnail
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore dignissimos dolores amet eligendi sapiente ipsum ad facilis non? Nihil dignissimos voluptate dicta, quidem vitae modi laudantium eligendi sequi neque!</p>
+                        <div>
+                            <a href="">view</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box20">
+                    <div class="thumbnail">
+                        Thumbnail
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore dignissimos dolores amet eligendi sapiente ipsum ad facilis non? Nihil dignissimos voluptate dicta, quidem vitae modi laudantium eligendi sequi neque!</p>
+                        <div>
+                            <a href="">view</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box20">
+                    <div class="thumbnail">
+                        Thumbnail
+                    </div>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam inventore dignissimos dolores amet eligendi sapiente ipsum ad facilis non? Nihil dignissimos voluptate dicta, quidem vitae modi laudantium eligendi sequi neque!</p>
+                        <div>
+                            <a href="">view</a>
+                            <a href="">Edit</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            </section>
+    </div>
+
+</body>
+</html>
