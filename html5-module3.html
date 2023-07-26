@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5|Assignment</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .cointainar{
+            margin: auto 5%;
+            background-color: #eee;
+        }
+        .cointainar h3{
+            color: #000000;
+        }
+        .cointainar ol{
+            padding: 0px 60px;
+            color: goldenrod;
+        }
+        .cointainar ul{
+            padding: 0px 60px;
+        }
+        .cointainar h1{
+            padding: 10% 0%;
+            text-align: center;
+        }
+        .cointainar h3{
+            margin: 2% 0%;
+        }
+        .cointainar fieldset{
+            margin: 3% 0%;
+        }
+        .box{
+            width: 100%;
+        }
+        .box video{
+            width: 100%;
+            height: inherit;
+        }
+        #sv{
+            margin-top: 2%;;
+        }        
+    </style>
+</head>
+<body>
+    <div class="cointainar">
+        <h1>Module (HTML5) – 3</h1>
+        <h3>Q1.What are the new tags added in HTML5?</h3>
+        <ol>
+            <li>&lt; Footer &gt;</li>
+            <li>&lt; headar &gt;</li>
+            <li>&lt; aside &gt;</li>
+            <li>&lt; section &gt;</li>
+            <li>&lt; meter &gt;</li>
+            <li>&lt; audio &gt;</li>
+            <li>&lt; source &gt;</li>
+            <li>&lt; video &gt;</li>
+            <li>&lt; embed &gt;</li>
+            <li>&lt; tel &gt;</li>
+            <li>&lt; svg &gt;</li>
+            <li>&lt; progress &gt;</li>
+            <li>&lt; nav &gt;</li>
+            <li>&lt; figcaption &gt;</li>
+            <li>&lt; figure &gt;</li>
+            <li>&lt; Article &gt;</li>
+            <li>&lt; datalist &gt;</li>
+            <li>&lt; summary &gt;</li>
+            <li>&lt; details &gt;</li>
+            <li>&lt; color &gt;</li>
+            <li>&lt; Range &gt;</li>
+            <li>&lt; url &gt;</li>
+            <li>&lt; week &gt;</li>
+            <li>&lt; main &gt;</li>
+            <li>&lt; time &gt;</li>
+        </ol>
+        <hr> 
+       <h3> Q2.How to embed audio and video in a webpage?</h3>
+        <p>To embed audio in HTML, we use the &lt;audio&gt; tag.</p>
+            <fieldset>
+                <legend>Ex AUDIO CODE</legend>
+                &lt;audio src="hip-hop_flamenco-rose_short-159581.mp3" controls&gt;&lt;/audio&gt;
+            </fieldset>
+            <fieldset>
+                <legend>OUTPUT AUDIO</legend>
+                <audio src="hip-hop_flamenco-rose_short-159581.mp3" controls></audio>
+            </fieldset>
+            To embed video in HTML, we use the &lt;video&gt; tag.
+                <fieldset>
+                    <legend>Ex Video CODE</legend>
+                    &lt;video controls loop muted src="Spiderdesney.mp4"&gt;&lt;/video&gt;
+                </fieldset>
+            <div class="box">
+                <video controls loop muted poster="TOPS_logo2F-2.png" src="Spiderdesney.mp4"></video>
+            </div>
+        <hr>
+        <h3>Q3.Semantic element in HTML5?</h3> 
+        <p>In HTML there are some semantic elements that can be used to define different parts of a web page:</p>
+        <div class="box">
+            <ul>
+                <li>&lt;article&gt;</li>
+                <li>&lt;aside&gt;</li>
+                <li>&lt;details&gt;</li>
+                <li>&lt;figcaption&gt;</li>
+                <li>&lt;figure&gt;</li>
+                <li>&lt;footer&gt;</li>
+                <li>&lt;header&gt;</li>
+                <li>&lt;main&gt;</li>
+                <li>&lt;mark&gt;</li>
+                <li>&lt;nav&gt;</li>
+                <li>&lt;section&gt;</li>
+                <li>&lt;summary&gt;</li>
+                <li>&lt;time&gt;</li>
+            </ul>
+        </div>
+        <hr>
+        <h3>Q4.Canvas and SVG tags </h3>
+        
+        <p id="can">CANVAS TAG:-</p>
+        <p>The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via JavaScript.</p>
+        <p>The &lt;canvas&gt; element is only a container for graphics. You must use JavaScript to actually draw the graphics.</p>
+        <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+        <p style="background-color: greenyellow; width: fit-content;">A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+        <br>
+        <b>CANVAS Rectangular</b>
+        <br>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
+        <fieldset>
+            <legend>Example Code</legend>
+            &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;
+            &lt;canvas&gt;
+        </fieldset>
+        <p id="sv">SVG TAG:-</p><br>
+        <p>SVG defines vector-based graphics in XML format.</p>
+            <ul>
+                <li>SVG stands for Scalable Vector Graphics</li>
+                <li>SVG is used to define graphics for the Web</li>
+            </ul>
+        <p>
+            The HTML &lt;svg&gt; element is a container for SVG graphics.<br>
+            SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+        </p>
+        <br>
+        <b>SVG CIRCLE EX</b><br>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red" />
+        </svg>
+        <fieldset>
+            <legend>Example Code</legend>
+            &lt;svg width="100" height="100"&gt;
+                &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
+            &lt;/svg&gt;
+        </fieldset>
+        <footer>
+            <h1>END<br> THANK YOU &#128522;</h1>
+        </footer>
+    </div>
+</body>
+</html>
