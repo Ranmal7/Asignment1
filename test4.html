@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test4|Assesment</title>
+    
+    <!-- css start -->
+    <style>
+       
+       /* Universal css */
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        /* Cointainar css */
+        .cointainar{
+            padding: 20px;
+            background-color: lightblue;
+            margin: 0% auto;
+            width: 70%;
+        }
+        /* Contact us heading css */
+        .cointainar .heading{
+            margin: 10px 0px;
+        }
+        /* Horizontal Row*/
+        hr{
+            border-top: 2px solid;
+            margin: 10px 0px;
+        }
+        /* address start */
+        .cointainar .add{
+            padding: 10px;
+            background-color: #EEEEEE; 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+            align-items: center; 
+        }
+        /* Address row */
+        .cointainar .add .add-box{
+            margin-top: 20px;
+            width: 22%;
+        }
+        /* form start */
+        .form-box{
+            background-color: #EEEEEE;
+            width: 100%;
+            margin: 20px 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cointainar .form-box .fbox{
+            padding: 10px;
+            width: 50%;
+        }
+        .fbox i{
+            padding-left: 5px;
+            font-size: 25px;
+        }
+        /* Send button*/
+        #submit{
+            background-color: #f71b02;
+            color: white;
+            padding: 10px;
+            border: 0;
+            border-radius: 5px;
+        }
+        /* form input */
+        input{
+            margin: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        /* form text area */
+        textarea{
+            margin: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 10px;    
+        }
+        /* Location mark*/
+        .loc{
+            font-size: 30px;
+        }
+    </style>
+    
+    <!-- Icon cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- main box start -->
+    <div class="cointainar">
+        
+        <!-- Contact us start -->
+        <div class="heading">
+            <h4>CONTACT US</h4>
+        </div>
+        <!-- Contact us end -->
+        
+        <!-- horizontal row start -->
+        <hr>
+        <!-- horizontal row end -->
+
+        <!-- Address section start -->
+        <div class="add">
+            <P style="width: 100%; height: fit-content;">ADDRESS:</P>
+            <!-- Address section start -->
+            <div class="add-box">
+                <p>Saint Macro Street,6th <br>
+                floor,Tokyo,Japan,123456</p>
+            </div>
+            <!-- Address section end -->
+            
+            <!-- contact and mail section start-->
+            <div class="add-box">
+                <p>
+                    <i class="fa-solid fa-square-phone" style="color: #f90b0b;"></i>
+                    +91 1234567890
+                </p>
+                <p>
+                    <i class="fa-solid fa-envelope" style="color: #0aceff;"></i>
+                    example@gmail.com
+                </p>
+            </div>
+            <!-- contact and mail section end-->
+            
+            <!-- location mark section start-->
+            <div class="add-box loc">
+                <i class="fa-solid fa-location-dot" style="color: #f71b02;"></i>
+            </div>
+            <!-- location mark section end-->
+        </div>
+        <!-- Address section end -->
+        
+        <!-- Form and map section start -->
+        <div class="form-box">
+            <!-- Form input section strat -->
+            <div class="fbox">
+                <form>
+                    <input type="text" placeholder="Name:" required minlength="3" maxlength="6">
+                    <input type="text" placeholder="Company:" required><br>
+                    <input type="email" placeholder="Email:" required>
+                    <input type="tel" pattern="[0-9]{10}" required maxlength="10"><br>
+                    <textarea name="Message" id="" cols="52" rows="8" placeholder="Message:" required></textarea><br>
+                    <input type="submit" value="Send" required id="submit" name="submit">
+                </form>
+            </div>
+            <!-- Form input section end -->
+
+            <!-- googlemap section start -->
+            <div class="fbox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14764.778943387848!2d73.1845191!3d22.3084738!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf4bdaf0f89b%3A0xdd295e03d2b284b6!2sTops%20Technologies%20-%20Best%20Software%20%26%20Hardware%20Training%20Institute%20in%20Vadodara!5e0!3m2!1sen!2sin!4v1690449629020!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <i class="fa-brands fa-square-facebook" style="color: #2d66c8;"></i>
+                <i class="fa-brands fa-square-twitter" style="color: #2d66c8;"></i>
+                <i class="fa-brands fa-linkedin" style="color: #226cec;"></i>
+                <i class="fa-brands fa-square-github" style="color: #000000;"></i>
+            </div>
+            <!-- googlemap section end -->
+        </div>
+        <!-- Form and map section end -->
+    </div>
+    <!-- Cointainar end -->
+</body>
+</html>
