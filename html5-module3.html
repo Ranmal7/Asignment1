@@ -43,46 +43,181 @@
         }
         #sv{
             margin-top: 2%;;
-        }        
+        }  
+        table{
+            border: 1px solid gray;
+        }
+        table tr:nth-of-type(2n+1){
+            background-color: lightgray;
+        }
+        table td{
+            line-height: 1.7;
+            padding: 5px 0px;
+            border: 1px solid gray;
+        }
+        table td .h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 21px;
+            font-weight: 400;
+            color: #610b4b;
+        }  
     </style>
 </head>
 <body>
     <div class="cointainar">
         <h1>Module (HTML5) – 3</h1>
         <h3>Q1.What are the new tags added in HTML5?</h3>
-        <ol>
-            <li>&lt; Footer &gt;</li>
-            <li>&lt; headar &gt;</li>
-            <li>&lt; aside &gt;</li>
-            <li>&lt; section &gt;</li>
-            <li>&lt; meter &gt;</li>
-            <li>&lt; audio &gt;</li>
-            <li>&lt; source &gt;</li>
-            <li>&lt; video &gt;</li>
-            <li>&lt; embed &gt;</li>
-            <li>&lt; tel &gt;</li>
-            <li>&lt; svg &gt;</li>
-            <li>&lt; progress &gt;</li>
-            <li>&lt; nav &gt;</li>
-            <li>&lt; figcaption &gt;</li>
-            <li>&lt; figure &gt;</li>
-            <li>&lt; Article &gt;</li>
-            <li>&lt; datalist &gt;</li>
-            <li>&lt; summary &gt;</li>
-            <li>&lt; details &gt;</li>
-            <li>&lt; color &gt;</li>
-            <li>&lt; Range &gt;</li>
-            <li>&lt; url &gt;</li>
-            <li>&lt; week &gt;</li>
-            <li>&lt; main &gt;</li>
-            <li>&lt; time &gt;</li>
-        </ol>
+        <table cellspacing="0">
+            <tbody><tr>
+            <th>Tag</th>
+            <th>Description</th>
+            </tr>
+            <tr>
+            <td colspan="2"><span class="h3">Structural or Semantic Tags</span></td>
+            </tr><tr>
+            <td>&lt;article&gt;</td>
+            <td>It defines the independent or self-contained content of a webpage.</td>
+            </tr>
+            <tr>
+            <td>&lt;aside&gt;</td>
+            <td>It defines the content which provide information about the main content.</td>
+            </tr>
+            <tr>
+            <td>&lt;bdi&gt;</td>
+            <td>It is used to isolate the part of text which might be formatted in another direction.</td>
+            </tr>
+            <tr>
+            <td>&lt;details&gt;</td>
+            <td>It defines additional information which only visible as per user demand.</td>
+            </tr>
+            <tr>
+            <td>&lt;dialog&gt;</td>
+            <td>It represents a dialog box or other interactive components.</td>
+            </tr>
+            <tr>
+            <td>&lt;figcaption&gt;</td>
+            <td>It defines caption for the &lt;figure&gt; element.</td>
+            </tr>
+            <tr>
+            <td>&lt;figure&gt;</td>
+            <td>It defines a self-contained content, and referenced as a single unit.</td>
+            </tr>
+            <tr>
+            <td>&lt;footer&gt;</td>
+            <td>It represents the footer section of the webpage.</td>
+            </tr>
+            <tr>
+            <td>&lt;header&gt;</td>
+            <td>It defines the introductory or navigational content of the webpage.</td>
+            </tr>
+            <tr>
+            <td>&lt;main&gt;</td>
+            <td>It specifies the main content of the HTML document.</td>
+            </tr>
+            <tr>
+            <td>&lt;mark&gt;</td>
+            <td>It represent the text which is highlighted or marked for reference or notation purposes.</td>
+            </tr>
+            <tr>
+            <td>&lt;meter&gt;</td>
+            <td>It represents a scalar value within a known range.</td>
+            </tr>
+            <tr>
+            <td>&lt;nav&gt;</td>
+            <td>It represents the section which contains navigation links.</td>
+            </tr>
+            <tr>
+            <td>&lt;progress&gt;</td>
+            <td>It defines a progress bar which shows completions progress of a task.</td>
+            </tr>
+            <tr>
+            <td>&lt;rp&gt;</td>
+            <td>It defines alternative content for the browser which do not support ruby annotations.</td>
+            </tr>
+            <tr>
+            <td>&lt;rt&gt;</td>
+            <td>It defines explanations and pronunciations of characters in ruby annotations.</td>
+            </tr>
+            <tr>
+            <td>&lt;ruby&gt;</td>
+            <td>It defines ruby annotations (Specifically for Asian language).</td>
+            </tr>
+            <tr>
+            <td>&lt;section&gt;</td>
+            <td>It defines a generic section within an HTML document.</td>
+            </tr>
+            <tr>
+            <td>&lt;summary&gt;</td>
+            <td>It defines summary or caption for a &lt;details&gt; element which can be clicked to change the state of &lt;details&gt; element.</td>
+            </tr>
+            <tr>
+            <td>&lt;time&gt;</td>
+            <td>It defines data/time within an HTML document. </td>
+            </tr>
+            <tr>
+            <td>&lt;wbr&gt;</td>
+            <td>It specifies a line break opportunity. (Where line break possible)</td>
+            </tr>
+            <tr>
+            <td colspan="2"><span class="h3">HTML5 Form Tags</span></td>
+            </tr><tr>
+            </tr><tr>
+            <td>&lt;datalist&gt;</td>
+            <td>It represent predefined list for input &lt;option&gt; element. </td>
+            </tr>
+            <tr>
+            <td>&lt;output&gt;</td>
+            <td>It is used a container element to represent the output of a calculation or outcome of user action.</td>
+            </tr>
+            <tr>
+            <td colspan="2"><span class="h3">Graphics Tags</span></td>
+            </tr><tr>
+            </tr><tr>
+            <td>&lt;canvas&gt;</td>
+            <td>It allows drawing graphics and animations via scripting. </td>
+            </tr>
+            <tr>
+            <td>&lt;svg&gt;</td>
+            <td>It is used to draw scalable vector graphics. </td>
+            </tr>
+            <tr>
+            <td colspan="2"><span class="h3">HTML5 Media Tags</span></td>
+            </tr><tr>
+            </tr><tr>
+            <td>&lt;audio&gt;</td>
+            <td>It defines sound content.</td>
+            </tr>
+            <tr>
+            <td>&lt;embed&gt;</td>
+            <td>It defines a container for external files/application/media. </td>
+            </tr>
+            <tr>
+            <td>&lt;source&gt;</td>
+            <td>It defines multiple media resources for the media elements. </td>
+            </tr>
+            <tr>
+            <td>&lt;track&gt;</td>
+            <td>It defines text tracks for &lt;audio&gt; and &lt;video&gt; files</td>
+            </tr>
+            <tr>
+            <td>&lt;video&gt;</td>
+            <td>It defines video content within HTML document. </td>
+            </tr>
+            </tbody></table>
         <hr> 
        <h3> Q2.How to embed audio and video in a webpage?</h3>
         <p>To embed audio in HTML, we use the &lt;audio&gt; tag.</p>
             <fieldset>
                 <legend>Ex AUDIO CODE</legend>
-                &lt;audio src="hip-hop_flamenco-rose_short-159581.mp3" controls&gt;&lt;/audio&gt;
+                &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                        &emsp;&lt;title&gt;audio tag|Html&lt;/title&gt;<br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                        &emsp;&lt;audio src="hip-hop_flamenco-rose_short-159581.mp3" controls&gt;&lt;/audio&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
             </fieldset>
             <fieldset>
                 <legend>OUTPUT AUDIO</legend>
@@ -91,7 +226,15 @@
             To embed video in HTML, we use the &lt;video&gt; tag.
                 <fieldset>
                     <legend>Ex Video CODE</legend>
-                    &lt;video controls loop muted src="Spiderdesney.mp4"&gt;&lt;/video&gt;
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="en"&gt;<br>
+                    &lt;head&gt;<br>
+                        &emsp;&lt;title&gt;video tag|Html&lt;/title&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                        &emsp;&lt;video controls loop muted src="Spiderdesney.mp4"&gt;&lt;/video&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
                 </fieldset>
             <div class="box">
                 <video controls loop muted poster="TOPS_logo2F-2.png" src="Spiderdesney.mp4"></video>
@@ -100,26 +243,104 @@
         <h3>Q3.Semantic element in HTML5?</h3> 
         <p>In HTML there are some semantic elements that can be used to define different parts of a web page:</p>
         <div class="box">
-            <ul>
-                <li>&lt;article&gt;</li>
-                <li>&lt;aside&gt;</li>
-                <li>&lt;details&gt;</li>
-                <li>&lt;figcaption&gt;</li>
-                <li>&lt;figure&gt;</li>
-                <li>&lt;footer&gt;</li>
-                <li>&lt;header&gt;</li>
-                <li>&lt;main&gt;</li>
-                <li>&lt;mark&gt;</li>
-                <li>&lt;nav&gt;</li>
-                <li>&lt;section&gt;</li>
-                <li>&lt;summary&gt;</li>
-                <li>&lt;time&gt;</li>
-            </ul>
+            <table cellspacing="0">
+                <tbody><tr>
+                <th>Tag</th>
+                <th>Description</th>
+                </tr>
+                <tr>
+                <td colspan="2"><span class="h3">Semantic Tags</span></td>
+                </tr><tr>
+                <td>&lt;article&gt;</td>
+                <td>It defines the independent or self-contained content of a webpage.</td>
+                </tr>
+                <tr>
+                <td>&lt;aside&gt;</td>
+                <td>It defines the content which provide information about the main content.</td>
+                </tr>
+                <tr>
+                <td>&lt;bdi&gt;</td>
+                <td>It is used to isolate the part of text which might be formatted in another direction.</td>
+                </tr>
+                <tr>
+                <td>&lt;details&gt;</td>
+                <td>It defines additional information which only visible as per user demand.</td>
+                </tr>
+                <tr>
+                <td>&lt;dialog&gt;</td>
+                <td>It represents a dialog box or other interactive components.</td>
+                </tr>
+                <tr>
+                <td>&lt;figcaption&gt;</td>
+                <td>It defines caption for the &lt;figure&gt; element.</td>
+                </tr>
+                <tr>
+                <td>&lt;figure&gt;</td>
+                <td>It defines a self-contained content, and referenced as a single unit.</td>
+                </tr>
+                <tr>
+                <td>&lt;footer&gt;</td>
+                <td>It represents the footer section of the webpage.</td>
+                </tr>
+                <tr>
+                <td>&lt;header&gt;</td>
+                <td>It defines the introductory or navigational content of the webpage.</td>
+                </tr>
+                <tr>
+                <td>&lt;main&gt;</td>
+                <td>It specifies the main content of the HTML document.</td>
+                </tr>
+                <tr>
+                <td>&lt;mark&gt;</td>
+                <td>It represent the text which is highlighted or marked for reference or notation purposes.</td>
+                </tr>
+                <tr>
+                <td>&lt;meter&gt;</td>
+                <td>It represents a scalar value within a known range.</td>
+                </tr>
+                <tr>
+                <td>&lt;nav&gt;</td>
+                <td>It represents the section which contains navigation links.</td>
+                </tr>
+                <tr>
+                <td>&lt;progress&gt;</td>
+                <td>It defines a progress bar which shows completions progress of a task.</td>
+                </tr>
+                <tr>
+                <td>&lt;rp&gt;</td>
+                <td>It defines alternative content for the browser which do not support ruby annotations.</td>
+                </tr>
+                <tr>
+                <td>&lt;rt&gt;</td>
+                <td>It defines explanations and pronunciations of characters in ruby annotations.</td>
+                </tr>
+                <tr>
+                <td>&lt;ruby&gt;</td>
+                <td>It defines ruby annotations (Specifically for Asian language).</td>
+                </tr>
+                <tr>
+                <td>&lt;section&gt;</td>
+                <td>It defines a generic section within an HTML document.</td>
+                </tr>
+                <tr>
+                <td>&lt;summary&gt;</td>
+                <td>It defines summary or caption for a &lt;details&gt; element which can be clicked to change the state of &lt;details&gt; element.</td>
+                </tr>
+                <tr>
+                <td>&lt;time&gt;</td>
+                <td>It defines data/time within an HTML document. </td>
+                </tr>
+                <tr>
+                <td>&lt;wbr&gt;</td>
+                <td>It specifies a line break opportunity. (Where line break possible)</td>
+                </tr>
+            </tbody>
+            </table>
         </div>
         <hr>
         <h3>Q4.Canvas and SVG tags </h3>
         
-        <p>CANVAS TAG:-</p>
+        <p id="can">CANVAS TAG:-</p>
         <p>The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via JavaScript.</p>
         <p>The &lt;canvas&gt; element is only a container for graphics. You must use JavaScript to actually draw the graphics.</p>
         <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
@@ -131,10 +352,18 @@
         </canvas>
         <fieldset>
             <legend>Example Code</legend>
-            &lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;
-            &lt;canvas&gt;
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &lt;head&gt;<br>
+                        &emsp;&lt;title&gt;canvas tag|Html&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                    &emsp;&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;
+                &lt;/canvas&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
         </fieldset>
-        <p>SVG TAG:-</p><br>
+        <p id="sv">SVG TAG:-</p><br>
         <p>SVG defines vector-based graphics in XML format.</p>
             <ul>
                 <li>SVG stands for Scalable Vector Graphics</li>
@@ -151,9 +380,17 @@
         </svg>
         <fieldset>
             <legend>Example Code</legend>
-            &lt;svg width="100" height="100"&gt;
-                &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;
-            &lt;/svg&gt;
+            &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &lt;head&gt;<br>
+                        &emsp;&lt;title&gt;canvas tag|Html&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &emsp;&lt;svg width="100" height="100"&gt;
+                    &lt;circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"&gt;
+                    &lt;/svg&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
         </fieldset>
         <footer>
             <h1>END<br> THANK YOU &#128522;</h1>
