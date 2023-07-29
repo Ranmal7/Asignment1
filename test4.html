@@ -71,13 +71,19 @@
         }
         /* form input */
         input{
+            width: 100%;
             margin: 10px;
             border: 1px solid;
             border-radius: 5px;
             padding: 10px;
         }
         /* form text area */
+        .boxt{
+            width: 100%;
+        }
+        /* message box */
         textarea{
+            width: 100%;
             margin: 10px;
             border: 1px solid;
             border-radius: 5px;
@@ -86,6 +92,23 @@
         /* Location mark*/
         .loc{
             font-size: 30px;
+        }
+        /*this section is input form area*/
+        section{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        /* input area responsive css*/
+        @media screen and (max-width:768px) {
+            .box{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width:1295px) {
+            .box{
+                width: 100%;
+            }
         }
     </style>
     
@@ -142,12 +165,26 @@
             <!-- Form input section strat -->
             <div class="fbox">
                 <form>
-                    <input type="text" placeholder="Name:" required minlength="3" maxlength="6"pattern="[A-Za-z]{0-10}">
-                    <input type="text" placeholder="Company:" required><br>
-                    <input type="email" placeholder="Email:" required>
-                    <input type="tel" pattern="[0-9]{10}" required maxlength="10" placeholder="Mobile:"><br>
-                    <textarea name="Message" id="" cols="52" rows="8" placeholder="Message:" required></textarea><br>
-                    <input type="submit" value="Send" required id="submit" name="submit">
+                    <section>
+                    <div class="box">
+                        <input type="text" placeholder="Name:" required minlength="3" maxlength="6"pattern="[A-Za-z]{0-10}">
+                    </div>
+                    <div class="box">
+                        <input type="text" placeholder="Company:" required>
+                    </div>
+                    <div class="box">
+                        <input type="email" placeholder="Email:" required>
+                    </div>
+                    <div class="box">
+                        <input type="tel" pattern="[0-9]{10}" required maxlength="10" placeholder="Mobile:">
+                    </div>
+                    <div class="boxt">
+                        <textarea name="Message" id="" rows="8" placeholder="Message:" required></textarea><br>
+                    </div>
+                    <div class="subm">
+                        <input type="submit" value="Send" required id="submit" name="submit">
+                    </div>
+                    </section>
                 </form>
             </div>
             <!-- Form input section end -->
